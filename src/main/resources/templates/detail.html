@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Todos | Detail</title>
+</head>
+<body>
+<main>
+    <div th:if="${todo != null}">
+        <p>Label : <span th:text="${todo.getLabel()}"></span></p>
+        <p>Description : <span th:text="${todo.getDescription()}"></span></p>
+        <p>Completed : <span th:checked="${todo.getCompleted()}"></span></p>
+    </div>
+    <div th:unless="${todo != null}">
+        <p>Le toto recherché n'existe pas !</p>
+    </div>
+</main>
+</body>
+</html>
