@@ -9,7 +9,7 @@ import java.util.List;
 @Service
 public class TodoService {
 
-    private List<Todo> todos;
+    private final List<Todo> todos;
 
     public TodoService() {
         todos = new ArrayList<>();

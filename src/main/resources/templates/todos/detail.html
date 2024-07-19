@@ -9,7 +9,7 @@
     <div th:if="${todo != null}">
         <p>Label : <span th:text="${todo.getLabel()}"></span></p>
         <p>Description : <span th:text="${todo.getDescription()}"></span></p>
-        <p>Completed : <span th:checked="${todo.getCompleted()}"></span></p>
+        <p>Completed : <input type="checkbox" th:checked="${todo.getCompleted()}"></p>
     </div>
     <div th:unless="${todo != null}">
         <p>Le toto recherché n'existe pas !</p>

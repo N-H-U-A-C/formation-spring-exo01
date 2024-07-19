@@ -1,4 +1,4 @@
-package dev.cb.formationspringexo01;
+package dev.cb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
